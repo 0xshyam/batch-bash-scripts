@@ -1,0 +1,2 @@
+# Command to print the list of IPs in a given subnet
+nmap -n -sL IP/CIDR | grep "for" | cut -f 5 -d " "
