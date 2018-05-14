@@ -3,9 +3,8 @@
 # It should be used only to download all files from a particular directory.
 
 tree=`echo $1|grep "/tree/"`
-echo $tree
 if [ -n "$tree" ]; then
-	echo "True"
+	echo "URL looks okay! proceeding to download."
 else
 	echo "Looks like you are trying to download the entire repo! "
 	echo "You could directly download the zip file from github instead!"
